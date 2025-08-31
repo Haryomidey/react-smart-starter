@@ -1,6 +1,6 @@
 {
   "name": "react-smart-starter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": {
     "react-smart-starter": "bin/react-smart-starter.js"
   },
