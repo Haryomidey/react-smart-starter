@@ -3,14 +3,17 @@
 ![React](https://img.shields.io/badge/React-18.0-blue?style=flat-square)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![npm](https://img.shields.io/npm/v/react-smart-starter?style=flat-square)
+![npm](https://img.shields.io/npm/dt/react-smart-starter?style=flat-square)
 
-A **modern React starter template** designed to help developers **kickstart projects quickly** with preconfigured routes, authentication, context management, and reusable UI components. Fully responsive and customizable, it includes a **dashboard layout**, login/signup flow, OTP verification, and a consistent color theme inspired by ShadCN.
+🚀 A modern **React + Vite + Tailwind starter CLI** designed to help developers **kickstart projects quickly** with preconfigured routes, authentication, context management, and reusable UI components.
+
+Fully responsive and customizable, it includes a **dashboard layout**, login/signup flow, OTP verification, and a clean design inspired by ShadCN.
 
 ---
 
-## Features
+## ✨ Features
 
-* ✅ Pre-configured React project structure
 * ✅ **Routing** with React Router v6
 * ✅ **Authentication**: Login, Signup, OTP, Forgot/Reset Password
 * ✅ **Dashboard** layout with Sidebar, Header, and responsive content area
@@ -21,29 +24,20 @@ A **modern React starter template** designed to help developers **kickstart proj
 
 ---
 
-## Installation
+## 🚀 Installation
+
+Create a new project in seconds:
 
 ```bash
-# Clone the repository
-git clone https://github.com/haryomidey/react-smart-starter.git
-
-# Navigate into the project directory
-cd react-smart-starter
-
-# Install dependencies
+npx react-smart-starter my-app
+cd my-app
 npm install
-# or
-yarn install
-
-# Start the development server
 npm run dev
-# or
-yarn dev
 ```
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 src/
@@ -52,53 +46,49 @@ src/
 ├─ pages/            # Home, Signup, Login, Dashboard, OTP, Forgot/Reset
 ├─ contexts/         # AuthContext for authentication state
 ├─ hooks/            # Custom hooks
-└─ App.jsx           # Router setup
+└─ main.jsx          # Router setup
 ```
 
 ---
 
-## Usage
+## ⚡ Usage
 
-* Public pages: Home, Signup, Login, OTP, Forgot/Reset Password
-* Protected pages: Dashboard (accessible only when logged in)
-* Extend the dashboard by adding more nested routes under `DashboardLayout`
+* **Public pages**: Home, Signup, Login, OTP, Forgot/Reset Password  
+* **Protected pages**: Dashboard (accessible only when logged in)  
 
+Example: adding a new dashboard route  
 ```jsx
-// Example: Adding a new dashboard page
 {
   path: "users",
   element: <UsersPage />
 }
 ```
 
-* Customize **colors** and **fonts** in `tailwind.config.js`
+🎨 Customize **colors** and **fonts** in `tailwind.config.js`.
 
 ---
 
-## Screenshots
+## 📸 Screenshots / Demo
 
-* Home Page
-* Login / Signup
-* Dashboard with Sidebar and Cards
-* 404 Not Found page
+> Add your screenshots or deploy to [Vercel](https://vercel.com) / [Netlify](https://netlify.com) and share the live demo link here.
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/new-feature`)
-3. Make your changes
-4. Submit a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License.
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature/new-feature`)  
+3. Make your changes  
+4. Submit a Pull Request  
 
 ---
 
-## Author
+## 📜 License
 
-* Your Name – [Ayotech](https://portfolio-six-flax-15.vercel.app/)
+This project is licensed under the **MIT License**.
+
+---
+
+## 👤 Author
+
+**Ayotech** – [Portfolio](https://portfolio-six-flax-15.vercel.app/)
