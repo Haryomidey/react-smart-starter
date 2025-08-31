@@ -63,14 +63,51 @@ const Home = () => {
             </section>
 
             <section className="py-20 px-6 bg-secondary text-secondary-foreground">
-                <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
-                <div className="max-w-4xl mx-auto space-y-6 text-center text-muted-foreground">
-                    <p>1️⃣ Run the CLI to scaffold your React project.</p>
-                    <p>2️⃣ Configure your theme and routes via <code>project.config.json</code>.</p>
-                    <p>3️⃣ Start building your app with prebuilt layouts, components, and auth system.</p>
-                    <p>4️⃣ Customize everything as your app grows!</p>
+                <h2 className="text-3xl font-bold text-center mb-16">⚡ How It Works</h2>
+
+                <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+                    <div className="bg-background rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+                        <div className="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 text-primary text-xl font-bold">
+                            1
+                        </div>
+                        <h3 className="font-semibold text-lg mb-2">Scaffold</h3>
+                        <p className="text-sm text-muted-foreground">
+                            Run the CLI to instantly generate your React project structure.
+                        </p>
+                    </div>
+
+                    <div className="bg-background rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+                        <div className="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 text-primary text-xl font-bold">
+                            2
+                        </div>
+                        <h3 className="font-semibold text-lg mb-2">Configure</h3>
+                        <p className="text-sm text-muted-foreground">
+                            Adjust theme and routes easily via <code>project.config.json</code>.
+                        </p>
+                    </div>
+
+                    <div className="bg-background rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+                        <div className="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 text-primary text-xl font-bold">
+                            3
+                        </div>
+                        <h3 className="font-semibold text-lg mb-2">Build</h3>
+                        <p className="text-sm text-muted-foreground">
+                            Start coding with prebuilt layouts, components, and authentication.
+                        </p>
+                    </div>
+
+                    <div className="bg-background rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+                        <div className="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 text-primary text-xl font-bold">
+                            4
+                        </div>
+                        <h3 className="font-semibold text-lg mb-2">Customize</h3>
+                        <p className="text-sm text-muted-foreground">
+                            Extend and tweak everything as your project grows!
+                        </p>
+                    </div>
                 </div>
             </section>
+
 
             <section className="py-20 px-6 text-center">
                 <h2 className="text-3xl font-bold mb-6">Ready to boost your React development?</h2>
