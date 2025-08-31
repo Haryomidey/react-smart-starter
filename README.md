@@ -3,8 +3,8 @@
 ![React](https://img.shields.io/badge/React-18.0-blue?style=flat-square)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
-![npm](https://img.shields.io/npm/v/react-smart-starter?style=flat-square)
-![npm](https://img.shields.io/npm/dt/react-smart-starter?style=flat-square)
+![npm version](https://img.shields.io/npm/v/react-smart-starter?color=blue&style=flat-square)
+![npm downloads](https://img.shields.io/npm/dt/react-smart-starter?color=green&style=flat-square)
 
 🚀 A modern **React + Vite + Tailwind starter CLI** designed to help developers **kickstart projects quickly** with preconfigured routes, authentication, context management, and reusable UI components.
 
@@ -24,15 +24,28 @@ Fully responsive and customizable, it includes a **dashboard layout**, login/sig
 
 ---
 
+## 📦 Prerequisites
+
+- Node.js **>= 16**
+- npm **>= 7** (or yarn/pnpm)
+
+---
+
 ## 🚀 Installation
 
 Create a new project in seconds:
 
+Run with **npx**:
 ```bash
 npx react-smart-starter my-app
 cd my-app
 npm install
 npm run dev
+```
+
+Or with **npm init**:
+```bash
+npm init react-smart-starter my-app
 ```
 
 ---
@@ -70,7 +83,21 @@ Example: adding a new dashboard route
 
 ## 📸 Screenshots / Demo
 
-> Add your screenshots or deploy to [Vercel](https://vercel.com) / [Netlify](https://netlify.com) and share the live demo link here.
+After running:
+
+```bash
+npx react-smart-starter my-app
+```
+
+You'll instantly get a project with authentication, dashboard, and Tailwind preconfigured 👇
+
+![Starter Preview](./screenshot.png)
+
+---
+
+## 🌍 Live Demo
+
+👉 Coming soon on [Vercel](https://vercel.com/)!
 
 ---
 

@@ -1,8 +1,8 @@
 {
   "name": "react-smart-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {
-    "create-react-smart-starter": "bin/create-react-smart-starter.js"
+    "react-smart-starter": "bin/react-smart-starter.js"
   },
   "type": "module",
   "dependencies": {
