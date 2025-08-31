@@ -9,12 +9,31 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const projectName = process.argv[2] || "my-app";
 const targetDir = path.join(process.cwd(), projectName);
 
-console.log(`🚀 Creating project: ${projectName}...`);
+function runCommand(command, cwd) {
+  try {
+    execSync(command, { cwd, stdio: "inherit" });
+  } catch (err) {
+    console.error(`❌ Failed to execute: ${command}`);
+    process.exit(1);
+  }
+}
 
-fs.copySync(path.join(__dirname, "../template"), targetDir);
-execSync("npm install", { cwd: targetDir, stdio: "inherit" });
+(async () => {
+  console.log(`\n🚀 Creating a new React project: \x1b[36m${projectName}\x1b[0m\n`);
 
-console.log(`✅ Done! Now run:
-  cd ${projectName}
-  npm run dev
-`);
+  try {
+      fs.copySync(path.join(__dirname, "../template"), targetDir);
+  } catch (err) {
+      console.error("❌ Error copying template files:", err.message);
+      process.exit(1);
+  }
+
+  console.log("📦 Installing dependencies...\n");
+  runCommand("npm install", targetDir);
+
+  console.log(`\n✅ Project setup complete!\n`);
+  console.log("👉 Next steps:");
+  console.log(`   cd ${projectName}`);
+  console.log("   npm run dev\n");
+  console.log("🎉 Happy coding with React Smart Starter!\n");
+})();
